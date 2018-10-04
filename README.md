@@ -19,5 +19,25 @@ This technique is useful for solving problems where we have to automate process 
 Have a look at: https://eng.uber.com/cota/
 
  ## How
+ ### BOW model[Bag of Words]
+ While using Text Data we need to represent data in the form which can be processed by Machine Learning algorithms. Bag of Words is one of  the ways to do so.
+ Bag of Words is a method to extract features from text documents. These features can be used for training machine learning algorithms. It creates a vocabulary of all the unique words occurring in all the documents in the training set. For example, if you have 3 documents-
+
+D1 - “I am feeling very happy today”
+D2 - “I am not well today”
+D3 - “I wish I could go to play”
+
+First, it creates a vocabulary using unique words from all the documents -
+Unique list of words - ["I", "am", "feeling", "very", "happy", "today", "not","well", "wish", "could","go", "to", "play"]
+
+Then, for each word the frequency of the word in the corresponding document is inserted
+![feature representation](https://qph.fs.quoracdn.net/main-qimg-054edc66e34ec439241ea1637350286f.webp)
+
+The above table depicts the training features containing term frequencies of each word in each document. This is called bag-of-words approach since the number of occurrence and not sequence or order of words matters in this approach.
+
+ Definition & Explaination has been taken from [https://www.quora.com/What-is-the-bag-of-words-algorithm]
+ ### Count Vectorizer
+ 
+ ### TF-IDF Algorithm
 
  ## What
